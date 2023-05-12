@@ -1,0 +1,23 @@
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: flex-start;
+    
+}
+
+.item {
+    background-color: brown;
+    padding: 30px;
+    border-radius: 10px;
+    flex-grow: 0; /*Ele ocupará o maior espaço possivel em x*/
+    flex-basis: 0; /*0 - Mesmo tamanho em horizontal independente
+    do conteudo 
+    1- Tamanho do elemento é o tamanho do conteudo
+    */
+}
+
+
+

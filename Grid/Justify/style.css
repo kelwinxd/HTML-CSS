@@ -1,0 +1,38 @@
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.container {
+    height: 800px;
+    display: grid;
+    grid-template-columns:300px 300px;
+    gap: 20px;
+   place-content: space-evenly center; /* align-content e justify content*/
+  /*justify content é o eixo horizontal
+    align content é o eixo vertical
+    obs: necessario ter espaço para alinha-los
+  
+  */
+
+}
+
+
+.item {
+    padding: 20px;
+    border: rgb(201, 200, 200) 1px solid;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item a {
+    background-color: blueviolet;
+    text-decoration: none;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    border-radius: 5px;
+}

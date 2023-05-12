@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+}
+
+/*   
+rem equivale a 16px, é interessante por pq melhora a acessibilidade de quem aumente
+a fonte do site para ler
+
+
+
+
+*/
+.div {
+
+  background-color: aquamarine;
+  height: calc(100vh / 2);
+  width: calc(50vw - 60px);
+}
+  
+.div2 {
+    background-color: brown;
+    height: calc(100vh/2);
+    width:49vw;
+}
+ 
+.div2 span {
+    text-shadow: 10px 10px 5px rgb(54, 53, 53);
+    font-size: 2rem;
+}
+.div span {
+    font-size: 2rem;
+}

@@ -1,0 +1,72 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    place-items: center center;
+    align-items: center;
+}
+
+.imagem {
+    /* Da linha 1 até linha 2 */
+    grid-column: 1 / -1;
+}
+
+
+.titulo {
+    
+    align-self: center;
+}
+
+.comprar {
+    /* Self alinha o elemento no bloqiunho que ele está */
+    
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+
+
+
+body {
+    font: arial ;
+    margin: 40px;
+}
+
+
+h1 {
+ font-size: 48px;
+ text-align: left;
+}
+
+h1, p {
+    margin: 0;
+}
+
+p, span {
+    font-size: 30px;
+}
+
+.comprar {
+    background: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+    
+  }
+
+.preco {
+    background-color: gray;
+    border-radius: 4px;
+    grid-column: 2;
+    place-self: center center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
