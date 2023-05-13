@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.goku {
+    height: 500px;
+    background-image: url("./ft.jpg");
+    background-size: cover; /*comprime a image de acordo com o tamanho da tela*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    display: flex;
+
+}
+
+h2 {
+margin: auto auto;
+background-color: azure;
+padding: 30px;
+border-radius: 8px;
+}
+
+.pattern {
+    height: 500px;
+    background-image: url("./simbol.svg");
+    background-size: 40px;
+    display: flex;
+    
+
+}
+
+.gradi {
+    height: 500px;
+    background-image: linear-gradient(to right, rgba(104, 13, 13, 0.133) 20%, rgba(243, 14, 102, 0.133) 30%, rgba(103, 18, 201, 0.133) 80%);
+
+    display: flex;
+}
+
+.radial {
+    height: 500px;
+    background-image: radial-gradient(circle,red,lightblue,blue);
+    display: flex;
+}
+
+
+

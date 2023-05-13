@@ -1,0 +1,53 @@
+.test {
+   height: 500px;
+   display: flex;
+    background-image: linear-gradient(to right, lightblue 20%, blue );
+}
+
+.test a {
+    margin: auto auto;
+    text-decoration: none;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    transition: .4s;
+}
+
+a:hover {
+    background-color: rgb(90, 194, 90);
+}
+
+a:focus {
+    border: 1px solid yellow;
+    outline: none;
+}
+
+a:active {
+    background: rgb(158, 180, 60);
+}
+
+.lista {
+    height: 500px;
+    display: flex;
+     background-image: linear-gradient(to right, lightgreen 20%, white );
+ }
+
+ol {
+    margin: auto auto;
+}
+
+.lista-1 li:nth-child(even) {
+    background-color: lightcoral;
+}
+
+
+.lista-2 li:nth-child(3n){
+    background-color: lightskyblue;
+}
+
+.lista-3 li:not(:first-child, .mark) {
+    background-color: lightgreen;
+}
