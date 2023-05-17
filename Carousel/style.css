@@ -1,0 +1,104 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+display: flex;
+justify-content: center;
+background-image: linear-gradient(to top, rgb(21, 19, 87),rgb(98, 98, 228));
+background-repeat: no-repeat;
+height: 100vh;
+}
+
+
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 200px auto;
+    
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 20px;
+    line-height: 250px;
+    left: 15px;
+    right: auto;
+    font-size: 30px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.2;
+    transition: all 500ms ease-in-out;
+    z-index: 2;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 15px;
+    
+    left: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+opacity: 1;
+
+}
+
+.item {
+    width: 250px;
+    height:250px;
+    flex-shrink: 0;
+    opacity: 0.4;
+    transition: all 600ms ease-in-out;
+    
+}
+
+
+.current-item {
+    opacity: 1;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+@media screen and (max-width:700px) {
+    .container {
+        position: relative;
+        padding: 15px;
+        max-width: 400px;
+        margin: 200px auto;
+        
+    }
+}

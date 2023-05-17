@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IDE Básico</title>
+  <style>
+
+    body {
+        display: flex;
+        align-items: flex-start;
+        min-height: 80vh;
+        gap: 30px;
+        justify-content: space-evenly;
+        background-color: burlywood;
+        width: 100vw;
+        max-height: 100vh;
+    }
+
+    * {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #editor {
+    margin-top: 100px;
+     
+      background-color: black;
+      width: 40vw;
+      height: 70vh;
+      max-height: 70vh;
+      overflow-y: auto;
+      float: left;
+      border: 1px solid black;
+      padding: 20px;
+      color: aliceblue;
+      border-radius: 20px;
+      
+
+    }
+
+    h1 {
+       position: absolute;
+       z-index: 3;
+       top: 10px;
+        
+    }
+
+    h3 {
+        position: absolute;
+        top: 40px;
+        z-index: 4;
+    }
+   
+
+    #preview {
+        margin-top: 100px;
+        width: 40vw;
+      height: 90vh;
+      float: right;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      padding: 10px;
+      background-color: white;
+      border-radius: 30px;
+      
+    }
+  </style>
+</head>
+<body>
+    <h1 style="text-align:center;">IDE</h1>
+    <h3>kelwin project</h3>
+    
+  <div id="editor" contenteditable  spellcheck="false"></div>
+  <button style="margin-top: 600px;">enviar</button>
+  <div id="preview"></div>
+
+  <script>
+    var editor = document.getElementById('editor');
+    var preview = document.getElementById('preview');
+
+    
+
+    editor.addEventListener('keydown', function(){
+        if(event.key == 'Enter' && !event.shiftKey){
+            event.preventDefault();
+            document.execCommand('insertHtml', false, '<br><br>')
+        }
+
+    })
+
+    editor.addEventListener('keyup', function() {
+      var code = editor.innerText;
+      preview.innerHTML = code;
+    });
+  </script>
+</body>
+</html>

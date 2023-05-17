@@ -1,0 +1,186 @@
+body {
+    display: flex;
+    
+    
+    
+    flex-direction: column;
+    
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    
+
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+
+#title::before {
+    content: " ";
+    
+    position: absolute;
+
+    top: 40px;
+    left: 38%;
+    background: rgb(218, 1, 1);
+    width: 80px;
+    height: 10px;
+    z-index: -1;
+    
+   
+    
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#placar {
+    background-image: linear-gradient(to right, gray,lightgray);
+    padding: 50px;
+}
+
+.container {
+    height: 150vh;
+    overflow: hidden;
+}
+
+.new {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+button {
+    margin-top: 50px;
+    width: 300px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: gray;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    
+    padding: 20px 5px;
+    max-width: 100%;
+    background-color: gray
+}
+
+header ul {
+    display: flex;
+    gap: 3rem;
+    margin-right: 12rem;
+    
+    
+    justify-content: flex-end;
+    
+    
+}
+
+header ul li { 
+line-height: 4rem;
+
+
+
+
+
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo {
+    line-height: 4rem;
+    flex: 0 0 auto;
+    margin-left: 11rem;
+}
+
+main {
+    margin-top: 100px;
+    width: 80vw;
+    margin: 100px auto;
+}
+
+
+
+.game {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    
+   
+    
+}
+.item {
+    height: 4rem;
+    box-shadow: 0 10px  20px rgb(61, 58, 58);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.item h2 {
+    
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white ;
+}
+
+.team {
+    width: 200px;
+    background-color: rgb(128, 12, 12);
+    
+
+
+}
+
+span {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+
+
+.team2 {
+    background-color: rgb(9, 102, 9);
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
