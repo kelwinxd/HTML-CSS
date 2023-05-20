@@ -1,0 +1,57 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+
+
+img {
+
+    justify-self: center;
+    width: 80%;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.div {
+    height: 500px;
+}
+.div p {
+    grid-column: 1;
+    
+}
+
+/* maxwidth é até 700px*/
+@media (max-width:700px){
+
+    .grid {
+        
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 80%;
+        justify-self: center;
+    }
+}
+
+
+/*min width Maior que */
+@media (min-width:1100px), (max-width: 1500px) {
+    p {
+        font-size: 150%;
+    }
+}
+
+/*Se omitir o screen ele aplicará para o print e projeçao
+que é quando se imprime ou faz projeção
+@media print
+*/
+
+
+
+

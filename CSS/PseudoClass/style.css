@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 2rem;
+}
+
+
 .test {
    height: 500px;
    display: flex;
@@ -51,3 +61,66 @@ ol {
 .lista-3 li:not(:first-child, .mark) {
     background-color: lightgreen;
 }
+
+.before {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    display: flex;
+     background-image: linear-gradient(to right, rgb(197, 117, 42) 20%, white );
+
+ }
+
+
+ /* Para posicionar um elemento em absolute,o pai precisa ser relative*/
+
+.before h1 {
+    margin: 150px auto;
+    display: block;
+} 
+.before h1::before {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 30px;
+    background: #f22f;
+}
+
+.listab {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    list-style: none;
+    
+}
+
+/*Para deixar o before alinhado ao meio basta dar um flex e align items center*/
+.listab li {
+    display: flex;
+    align-items: center;
+}
+
+.listab li::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background: #f22f;
+    border: 1px solid #f22f;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.before p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.before p::first-line {
+    font-weight: bold;
+}
+
+.before p::first-letter {
+    font-size: 3rem;
+}
+
+

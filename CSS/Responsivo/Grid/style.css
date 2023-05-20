@@ -1,0 +1,38 @@
+
+.grid {
+    display: grid;
+    /*Seria o mesmo que usar o @Media max-width 
+    grid: 1fr*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+}
+
+.grid img {
+    
+    justify-self: center;
+    
+}
+
+
+
+
+
+
+ img {
+    width: 90%;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+.gal {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.gal img {
+    margin-top: 10px;
+}
