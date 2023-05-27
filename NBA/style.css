@@ -51,6 +51,15 @@ p {
     background-color: #fff;
     border-radius: 20px;
     padding: 30px;
+
+}
+
+.new p {
+    margin-top: 20px;
+}
+
+.new p::first-letter {
+    font-size: 150%;
 }
 
 button {
