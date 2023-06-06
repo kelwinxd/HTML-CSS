@@ -26,6 +26,29 @@ header {
     padding: 10px;
     color: #141414;
     font-weight: bold;
+    line-height: 20px;
+    position: relative;
+}
+
+.lista a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 11px;
+    transition: all .3s linear;
+    
+
+}
+
+.lista a:hover::before,
+.lista a.ativo::before
+
+{
+    width: 90%;
 }
 
 .perfil {
