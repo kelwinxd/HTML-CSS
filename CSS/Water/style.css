@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #212121;
+}
+
+.water {
+    position: relative;
+}
+
+.water h2 {
+    position: absolute;
+    font-size: 5rem;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.water h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #2b6bbe;
+}
+
+.water h2:nth-child(2) {
+    color: #2b6bbe;
+    animation: waves 3s ease-in-out infinite;
+    cursor: pointer;
+    transition: all .5s ease ;
+    
+}
+.water h2:nth-child(2):hover {
+    color: #2b6bbe;
+    animation: full 3s forwards linear;
+    
+}
+
+@keyframes full {
+ 0% {
+        height: 50%;
+    }
+
+  100% {
+    height: 100%;
+  } 
+
+}
+
+
+@keyframes waves {
+    0%,100% {
+        clip-path: polygon(0% 55%, 19% 50%, 38% 50%, 53% 58%, 67% 64%, 79% 68%, 100% 64%, 100% 100%, 1% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 79%, 12% 68%, 30% 64%, 56% 71%, 73% 69%, 82% 54%, 100% 44%, 100% 100%, 1% 100%);
+    }
+
+
+}
+
