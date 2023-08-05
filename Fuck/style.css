@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    list-style: none;
+
+}
+
+body {
+    min-height: 1400px;
+}
+
+header {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+header ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.int {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: gray;
+    padding: 2rem;
+    height: 300px;
+
+}
+
+.scroll {
+    transform: translateX(-60px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.scroll.ativo {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.main {
+    max-width: 700px;
+    margin: 4rem auto 0 auto;
+    background-color: rgb(94, 11, 11);
+    padding: 2rem;
+    height: 300px;
+
+}
+
+.foot {
+    
+    max-width: 700px;
+    margin: 2rem auto 0 auto;
+    background-color: rgb(54, 11, 94);
+    padding: 2rem;
+    height: 300px;
+}

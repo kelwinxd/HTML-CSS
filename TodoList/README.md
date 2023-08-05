@@ -3,4 +3,4 @@
    <p>I applyed CRUD, setting attributes and a easily mechanic interface </p>
 
     
- <img src="src/assets/taskimage.jpg"  width="100%" height="500">
+ <img src="src/assets/taskimage.jpg"  width="80%" height="500">

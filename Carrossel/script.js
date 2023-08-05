@@ -1,9 +1,9 @@
 const imageWrapper = document.querySelector('.image-wrapper')
 const imageItems = document.querySelectorAll('.image-wrapper > *')
 const imageLength = imageItems.length
-const perView = 4
+const perView = 3
 let totalScroll = 0
-const delay = 2000
+const delay = 4000
 
 imageWrapper.style.setProperty('--per-view', perView)
 for(let i = 0; i < perView; i++) {
