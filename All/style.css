@@ -62,16 +62,17 @@ header h2{
 }
 
 .drop {
-    background-color:#000 ;
+    background-color:#242a69;
     color: #fff;
-    padding: 0.8rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     position: absolute;
     display: none;
     transition: all .4s ease;
-    
-    height: 80px;
+    border-radius: 1rem;
+    height: 100px;
     flex-direction: column;
    justify-content: center;
+   max-width: 80px;
    
     
 }
@@ -84,6 +85,12 @@ header h2{
 
 .drop li a {
     cursor: pointer;
+}
+
+.drop li a:hover {
+    
+    color: #090b20;
+    
 }
 
 .ativo {

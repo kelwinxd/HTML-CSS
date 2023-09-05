@@ -14,6 +14,7 @@
     grid-template-columns: 1fr 2fr;
     gap: 100px;
     padding: 110px 20px;
+    position: relative;
 }
 
 .descricao{
@@ -33,6 +34,7 @@
     border-radius: 5px;
     padding: 20px 10px;
     position: relative;
+    margin-top: 2rem;
 }
 
 .card::before {
@@ -65,9 +67,11 @@
 
 .cards {
     margin-top: 30px;
+    
     padding: 20px 10px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cards p:nth-child(3){
@@ -107,5 +111,34 @@ margin-top: 58px;
 
 .detalhes:last-child p {
 grid-column: 1;
+}
+
+.title-p {
+    position: absolute;
+    left: 45%;
+    top: 25px;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: #fff;
+
+    
+}
+
+.btn-plus {
+    position: absolute;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #3d3d3d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    bottom: 10px;
+    right: 2px;
+    color: #141414;
+}
+
+.btn-plus:hover {
+    filter:brightness(1.2) ;
 }
 
