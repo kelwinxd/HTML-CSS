@@ -1,0 +1,153 @@
+.container {
+    max-width: 700px;
+    display: flex;
+    margin: 18rem auto;
+    justify-content: space-around;
+    gap: 1rem;
+    
+
+}
+
+.card {
+    height: 230px;
+   background-color: gray;
+    padding: 1rem 2rem;
+    line-height: 170px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.card:first-child {
+   background-image: url("./Imgs/p1.webp");
+   background-position: center;
+   background-size:contain;
+   
+}
+
+
+
+.card:hover {
+    filter: brightness(1.2);
+}
+
+
+.actions {
+
+    max-width: 700px;
+    margin: -10rem auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    position: relative;
+}
+
+.actions button {
+    cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.actions button:first-child {
+    background-color: transparent;
+    color: green;
+    
+}
+
+.select {
+    border: 5px solid green;
+    background-color: rgb(85, 104, 85);
+    
+}
+
+.card.select::after {
+    content: '✓';
+    color: #fff;
+    background-color: rgb(8, 150, 44);
+    font-weight: bold;
+    border-radius: 50%;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    top: -10px;
+    right: -10px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.icons-share {
+    position: absolute;
+    bottom: 70px;
+    right: 1px;
+    display: flex;
+    gap: 20px;
+    transition: all ease .4s;
+    
+
+}
+
+.icons-share button {
+    font-size: 3rem;
+}
+.icons-share button:nth-child(2) {
+  background-color: transparent;
+  display: none;
+  color: blue;
+
+ 
+      
+}
+.icons-share button:first-child {
+    display: none;
+  
+}
+
+
+.icons-share button:nth-child(2).active {
+    animation: enter .4s ease forwards;
+    display: block;
+
+
+}
+
+.icons-share button:first-child.active {
+    animation: enter2 .4s ease forwards;
+    display: block;
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: rotate(0deg);
+        transform: translate(0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(45deg);
+        transform: translate(45%, -40%);
+    }
+}
+
+@keyframes enter2 {
+    from {
+        opacity: 0;
+        transform: rotate(0deg);
+        transform: translate(10%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(45deg);
+        transform: translate(12%, -40%);
+    }
+}
+
